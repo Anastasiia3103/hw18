@@ -32,12 +32,15 @@ public class Box<T extends Fruit> {
         return Math.abs (this.getWeight() - otherBox.getWeight()) < 0.0001;
     }
     public void merge(Box<T> otherBox) {
-        if (fruits.isEmpty() || otherBox.fruits.isEmpty ()
-        || fruits.get(0).getClass().equals (otherBox.fruits.get(0).getClass())) {
+        if (fruits.isEmpty () || otherBox.fruits.isEmpty ()
+                || fruits.get (0).getClass ().equals (otherBox.fruits.get (0).getClass ())){
             fruits.addAll (otherBox.fruits);
             otherBox.fruits.clear ();
-        } else {
+        }
+        else {
             System.out.println ("Cannot merge boxes of different fruit types.");
         }
     }
 }
+
+

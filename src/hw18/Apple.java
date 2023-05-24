@@ -5,3 +5,4 @@ public class Apple extends Fruit {
         super(1.0f);
     }
 }
+
